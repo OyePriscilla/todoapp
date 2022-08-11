@@ -1,9 +1,14 @@
-import React, { Component } from "react";
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
+import React, { Component } from 'react';
 
 class InputTodo extends Component {
-  state = {
-    title: "",
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      title: '',
+    };
+  }
 
   onChange = (e) => {
     this.setState({
@@ -16,7 +21,7 @@ class InputTodo extends Component {
     if (this.state.title.trim()) {
       this.props.addTodoProps(this.state.title);
       this.setState({
-        title: "",
+        title: '',
       });
     }
   };
@@ -25,15 +30,17 @@ class InputTodo extends Component {
     return (
       <form
         onSubmit={this.handleSubmit}
-        style={{ border: "3px solid black", borderRadius: "20px", width: "90%", margin: "0 auto", textAlign: "center" }}
+        style={{
+          border: '3px solid black', borderRadius: '20px', width: '90%', margin: '0 auto', textAlign: 'center',
+        }}
       >
         <input
           style={{
-            width: "80%",
-            height: "45px",
-            border: "none",
-            fontSize: "30px",
-            fontWeight: "300"
+            width: '80%',
+            height: '45px',
+            border: 'none',
+            fontSize: '30px',
+            fontWeight: '300',
 
           }}
           className="inputTodo"
@@ -43,7 +50,14 @@ class InputTodo extends Component {
           type="text"
           placeholder="Add new Todo "
         />
-        <button style={{backgroundColor: "inherit", border: "none", fontSize: "20px", cursor: "pointer" }}>Submit</button>
+        <button
+          type="button"
+          style={{
+            backgroundColor: 'inherit', border: 'none', fontSize: '20px', cursor: 'pointer',
+          }}
+        >
+          Submit
+        </button>
       </form>
     );
   }

@@ -1,10 +1,34 @@
-import React from "react";
-import styles from "./TodoItem.module.css";
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
+import React from 'react';
+import styles from './TodoItem.module.css';
+
+const liItem = {
+  listStyleType: 'none',
+  width: '90%',
+  margin: '0 auto',
+  borderBottom: '1px solid rgb(81, 95, 80)',
+  padding: '15px',
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  fontSize: '30px',
+};
+
+const completedStyle = {
+  fontStyle: 'italic',
+  color: '#595959',
+  opacity: 0.4,
+  textDecoration: 'line-through',
+};
 
 class TodoItem extends React.Component {
-  state = {
-    editing: false,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      editing: false,
+    };
+  }
 
   editTodo = () => {
     this.setState({
@@ -12,20 +36,20 @@ class TodoItem extends React.Component {
     });
   };
 
-  handleUpdatedDone = event => {
-    if (event.key === "Enter") {
-      this.setState({ editing: false })
+  handleUpdatedDone = (event) => {
+    if (event.key === 'Enter') {
+      this.setState({ editing: false });
     }
-  }
+  };
 
   render() {
-    let viewMode = {};
-    let editMode = {};
+    const viewMode = {};
+    const editMode = {};
 
     if (this.state.editing) {
-      viewMode.display = "none";
+      viewMode.display = 'none';
     } else {
-      editMode.display = "none";
+      editMode.display = 'none';
     }
 
     const { todo, handleChangeProps, handleDeleteProps } = this.props;
@@ -36,13 +60,15 @@ class TodoItem extends React.Component {
             type="checkbox"
             checked={todo.completed}
             onChange={() => handleChangeProps(todo.id)}
-          />{" "}
+          />
+          {' '}
           <span
             className="todoTitle"
             style={todo.completed ? completedStyle : null}
           >
             {todo.title}
-          </span>{" "}
+          </span>
+          {' '}
         </div>
         <input
           type="text"
@@ -53,11 +79,12 @@ class TodoItem extends React.Component {
           onKeyDown={this.handleUpdatedDone}
         />
         <button
+          type="button"
           style={{
-            border: "none",
-            borderRadius: "50%",
-            height: "50px",
-            width: "50px",
+            border: 'none',
+            borderRadius: '50%',
+            height: '50px',
+            width: '50px',
           }}
           onClick={() => handleDeleteProps(todo.id)}
         >
@@ -67,24 +94,5 @@ class TodoItem extends React.Component {
     );
   }
 }
-
-const liItem = {
-  listStyleType: "none",
-  width: "90%",
-  margin: "0 auto",
-  borderBottom: "1px solid rgb(81, 95, 80)",
-  padding: "15px",
-  display: "flex",
-  justifyContent: "space-between",
-  alignItems: "center",
-  fontSize: "30px",
-};
-
-const completedStyle = {
-  fontStyle: "italic",
-  color: "#595959",
-  opacity: 0.4,
-  textDecoration: "line-through",
-};
 
 export default TodoItem;
