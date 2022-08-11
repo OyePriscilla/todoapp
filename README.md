@@ -1,5 +1,5 @@
 # TodoApp
-This website was built to learn React. The Tod App was built to solidify the knowledge acquired in the process of learning.
+This website was built to learn React. The Todo App was built to solidify the knowledge acquired in the process of learning. Users can add, delete and edit todo item(s).
 
 ## Built With
 * HTML
