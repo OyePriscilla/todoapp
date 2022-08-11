@@ -1,73 +1,79 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
-# Project Name
-
-> Description the project.
-
+# TodoApp
+This website was built to learn React. The Todo App was built to solidify the knowledge acquired in the process of learning. Users can add, delete and edit todo item(s).
 
 ## Built With
+* HTML
+* CSS
+* JS
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+## Framework
+* React
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+Tools Needed
+* Text editor
+* Node.js
+* Gitflow
 
+Clone this repository on to your local PC
 
-To get a local copy up and running follow these simple example steps.
+* Click on the Code green button
+* By the right end of the read-only input containing the repository link click the clipboard icon to copy the link
+* In your local PC, open your terminal in the folder you would like to clone the repository into
+* Clone the repository with the command: git clone (copied link); like so: https://github.com/OyePriscilla/todoapp
+* After the clone, type in the command cd Leaderboard-Api to access the directory on the terminal.
 
-### Prerequisites
+- Once the files are on your machine, open the Leaderboard-Api folder in [Visual Studio Code](https://code.visualstudio.com/), and follow the steps in Installation & Set Up
 
-### Setup
+## 🛠 Installation & Set Up
 
-### Install
+### Create React App
 
-### Usage
+  npx create-react-app my-react-app
 
-### Run tests
+## Available Scripts
 
-### Deployment
+In the project directory, you can run:
 
+### `npm start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Authors
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-👤 **Author1**
+### `npm test`
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-👤 **Author2**
+### `npm run build`
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## 🤝 Contributing
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Author
+👤 **Author**
+👤 **Oyebade Prisicilla**
+
+- GitHub: [@OyePriscilla](https://github.com/OyePriscilla)
+- Twitter: [@Prisicilla](https://twitter.com/Prisicilla)
+- LinkedIn: [Priscilla](https://linkedin.com/in/Priscilla)
+
+## Contibution
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
-
-Give a ⭐️ if you like this project!
-
 ## Acknowledgments
+Hat tip to the person that reviewed my work! Thanks alot.
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
+## License
+This project is MIT licensed.
