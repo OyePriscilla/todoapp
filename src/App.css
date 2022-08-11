@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 100px auto;
+  width: 70%;
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+input:focus {
+  outline: none;
+}
