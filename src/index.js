@@ -16,8 +16,7 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<TodoContainer />} />
-        <Route path="about" element={<About />} />
-        <Route path="nomatch" element={<NoMatch />} />
+        <Route path="about" element={<About />} />       
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
